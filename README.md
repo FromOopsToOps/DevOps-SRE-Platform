@@ -48,18 +48,44 @@ Here, you’ll find **production-grade** examples of:
 
 ---
 
-## 📂 Repository Structure
+## Table of Contents
 
-```
-DevOps-SRE-Platform/
-│
-├── infrastructure/      # Terraform & Ansible modules
-├── kubernetes/          # Manifests, Helm charts, and operators
-├── pipelines/           # CI/CD pipeline definitions
-├── monitoring/          # Observability tools and dashboards
-├── security/            # Cloud security configurations
-└── docs/                # Runbooks, architecture diagrams, and case studies
-```
+### 📄 Documentation
+- [Incident Response Runbook](docs/incident-response-runbook.md)
+- [Project Overview](docs/project-overview.md)
+- [Security Hardening Guide](docs/security-hardening-guide.md)
+
+### 🏗️ Infrastructure
+- [Multi-Cloud Kubernetes Module](infrastructure/multi-cloud-k8s/)
+- [VPC Networking Module](infrastructure/vpc-networking/)
+
+### ☸️ Kubernetes
+- [Zero Downtime Deployment](kubernetes/zero-downtime-deploy/)  
+  - [Helm Chart](kubernetes/zero-downtime-deploy/helm-chart/)
+  - [Kustomize](kubernetes/zero-downtime-deploy/kustomize/)
+  - [README](kubernetes/zero-downtime-deploy/README.md)
+- [AlertManager Migrator Script](kubernetes/AlertManager-Migrator.py)
+- [GKE Safety Check Script](kubernetes/gke-safetycheck.sh)
+- [Node Pool Upgrader Script](kubernetes/nodepoolUpgrader.py)
+
+### 📊 Monitoring
+- [Python Example 1](monitoring/python-example-1.py)
+- [Monitoring Stack (Prometheus + Grafana)](monitoring/monitoring-stack/)  
+  - [Terraform](monitoring/monitoring-stack/terraform/)
+  - [Helm Values](monitoring/monitoring-stack/helm-values.yaml)
+  - [Dashboards](monitoring/monitoring-stack/dashboards/)
+- [Alerting Rules](monitoring/alerting-rules/)
+
+### 🔄 Pipelines
+- [Azure DevOps CI/CD Pipeline](pipelines/azure-devops/ci-cd-pipeline.yml)
+- [GitHub Actions CI/CD Pipeline](pipelines/github-actions/ci-cd-pipeline.yml)
+
+### 🔒 Security
+- [Kubernetes CIS Benchmarks](security/k8s-cis-benchmarks/)
+- [Cloud Security Configurations](security/cloud-security-config/)
+
+### 📜 License
+- [LICENSE](LICENSE)
 
 ---
 
