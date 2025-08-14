@@ -51,9 +51,9 @@ Here, you’ll find **production-grade** examples of:
 ## Table of Contents
 
 ### 📄 Documentation
-- [Incident Response Runbook](docs/incident-response-runbook.md)
-- [Project Overview](docs/project-overview.md)
-- [Security Hardening Guide](docs/security-hardening-guide.md)
+- [Incident Response Runbook](docs/incident-response-runboook/incident-response-runbook.md)
+- [Project Overview](docs/project-overview/project-overview.md)
+- [Security Hardening Guide](docs/security-hardening/security-hardening-guide.md)
 
 ### 🏗️ Infrastructure
 - [Multi-Cloud Kubernetes Module](infrastructure/multi-cloud-k8s/)
