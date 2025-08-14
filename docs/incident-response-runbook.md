@@ -107,4 +107,4 @@
 
 # Step-by-Step Diagram
 
-![Flowchart – PHP 500 on AWS Amplify](./Flowchart-error500PHPAmplify.svg)
+![Flowchart – PHP 500 on AWS Amplify](./Flowchart-error500PHPAmplify.png)
