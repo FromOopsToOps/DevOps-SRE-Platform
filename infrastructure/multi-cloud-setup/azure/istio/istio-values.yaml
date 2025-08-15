@@ -1,0 +1,8 @@
+meshConfig:
+  rootNamespace: istio-system
+  multiCluster:
+    enabled: true
+values:
+  global:
+    meshID: multi-cloud-mesh
+    clusterName: aks-cluster-1

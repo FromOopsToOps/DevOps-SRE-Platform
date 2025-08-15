@@ -105,4 +105,4 @@ If you’re looking for someone who can **own the platform end-to-end**, from pr
 
 ---
 
-**_""The obstacle is the way." – Marcus Aurelius"_**
+**_"The obstacle is the way." – Marcus Aurelius"_**
