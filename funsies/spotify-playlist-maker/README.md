@@ -1,61 +1,59 @@
 # 🎵 Spotify Playlist Maker
 
-Este projeto cria automaticamente uma **playlist no Spotify** a partir de um arquivo CSV com duas colunas (`nome`, `banda`).  
-Você fornece uma lista de músicas + artistas e o script adiciona tudo em uma playlist na sua conta do Spotify.  
+This project automatically creates a Spotify playlist from a CSV file with two columns (name, band).
+You provide a list of songs and artists, and the script adds everything to a playlist in your Spotify account.
 
 ---
 
-## 🚀 Pré-requisitos
+## 🚀 Prerequisites
 
-- **Conta Spotify** (pode ser gratuita ou premium).  
-- **Python 3.9+** instalado.  
-- **App do Spotify for Developers** configurado.
-
----
-
-## ⚙️ Criando seu app no Spotify
-
-1. Vá até o [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/).  
-2. Clique em **"Create App"**.  
-3. Defina um nome e descrição (ex: *Spotify Playlist Maker*).  
-4. Em **Redirect URI**, adicione:  
-   ```
-   http://127.0.0.1:8000/callback
-   ```
-   ⚠️ Desde **9 de abril de 2025**, novos apps precisam usar exatamente esse formato (`127.0.0.1`, porta `8000`).  
-5. Salve as alterações.  
-6. Anote o **Client ID** e **Client Secret**. Você vai colocar esses valores dentro do script Python.  
-7. Quando for logar pela primeira vez, o Spotify vai pedir autenticação em 2FA:  
-   - Você receberá um **e-mail com um código de 6 dígitos**.  
-   - Basta inserir esse código para concluir o login.  
+- Spotify account (free or premium).
+- Python 3.9+ installed.
+- Spotify Developer app configured.
 
 ---
 
-## 📥 Instalação
+## ⚙️ Creating your app on Spotify
 
-Clone o repositório e entre na pasta do projeto. Depois, crie e ative um ambiente virtual Python:
+1. Access the Spotify Developer Dashboard (https://developer.spotify.com/dashboard/).
+2. Click "Create App."
+3. Set a name and description (e.g., Spotify Playlist Maker).
+4. In **Redirect URI**, add:
+```
+http://127.0.0.1:8000/callback
+```
+⚠️ Since **April 9, 2025**, new applications must use exactly this format (`127.0.0.1`, port `8000`).
+5. Save your changes.
+6. Make a note of the **Client ID** and **Client Secret**. You will enter these values ​​in the Python script.
+7. When you log in for the first time, Spotify will ask for 2FA authentication:
+- You will receive an **email with a 6-digit code**.
+- Simply enter this code to complete the login.
 
-```bash
+---
+
+## 📥 Installation
+
+Clone the repository and navigate to the project folder. Next, create and activate a Python virtual environment:
+
+bash
 python3 -m venv spotify
 source spotify/bin/activate
-```
 
-Instale as dependências:
+Install the dependencies:
 
-```bash
+bash
 pip3 install -r requirements.txt
-```
 
 ---
 
-## 📝 Estrutura do CSV
+## 📝 CSV Structure
 
-O arquivo CSV deve ter exatamente duas colunas: `nome` (música) e `banda` (artista).  
+The CSV file must have exactly two columns: 'name' (song) and 'band' (artist).
 
-Exemplo (`lista-exemplo.csv`):
+Example (`example-list.csv`):
 
 ```csv
-nome,banda
+name,band
 Smells Like Teen Spirit,Nirvana
 One,Metallica
 Billie Jean,Michael Jackson
@@ -63,33 +61,33 @@ Billie Jean,Michael Jackson
 
 ---
 
-## ▶️ Uso
+## ▶️ Usage
 
-Execute o script passando o nome da playlist e o caminho para o CSV:
+Run the script, passing the playlist name and the path to the CSV:
 
 ```bash
-python3 spotify-playlist-maker.py --playlist "Playlist Teste" --file "lista-exemplo.csv"
+python3 spotify-playlist-maker.py --playlist "Test Playlist" --file "example-list.csv"
 ```
 
-- O script vai abrir o navegador para login no Spotify.  
-- Após autorizar o app, ele criará uma playlist privada com o nome fornecido.  
-- Todas as músicas encontradas no CSV serão adicionadas.  
+- The script will open the browser for Spotify login.
+- After authorizing the application, it will create a private playlist with the name you provided.
+- All songs found in the CSV will be added.
 
 ---
 
-## ✅ Resultado esperado
+## ✅ Expected result
 
 ```
-🎵 Criando playlist: Playlist Teste
-✔ Adicionado: Smells Like Teen Spirit - Nirvana
-✔ Adicionado: One - Metallica
-✔ Adicionado: Billie Jean - Michael Jackson
+🎵 Creating playlist: Playlist Test
+✔ Added: Smells Like Teen Spirit - Nirvana
+✔ Added: One - Metallica
+✔ Added: Billie Jean - Michael Jackson
 
-✅ Playlist 'Playlist Teste' criada com 3 músicas!
+✅ Playlist 'Playlist Test' created with 3 songs!
 ```
 
 ---
 
-## 📄 Licença
+## 📄 License
 
-Este projeto é distribuído sob a licença MIT.  
+This project is distributed under the MIT license.
