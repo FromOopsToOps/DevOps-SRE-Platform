@@ -87,6 +87,9 @@ Here, you’ll find **production-grade** examples of:
 ### 📜 License
 - [LICENSE](LICENSE)
 
+### EXTRA
+- [Spotify Playlist Maker](funsies/spotify-playlist-maker/)
+
 ---
 
 ## 📈 What You’ll See Here
